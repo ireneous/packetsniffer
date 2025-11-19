@@ -1,36 +1,34 @@
-A simple Python-based packet sniffer designed for macOS that captures live network packets and displays essential metadata. This project demonstrates networking knowledge, cybersecurity awareness, and Python scripting skills.
+PocketSniffer
+
+PocketSniffer is a lightweight network packet sniffer for monitoring and analyzing network traffic on your local machine. It captures packets in real time, allowing you to inspect source and destination addresses, protocol types, and packet sizes. The tool is designed for cybersecurity learning, lab testing, and small-scale network monitoring.
 
 Features
-Real-time monitoring of network traffic on macOS
-Displays source and destination IP addresses, protocol type, and packet size
-Works seamlessly with TCP, UDP, and ICMP protocols
-Lightweight, minimal setup, and ideal for portfolio demonstration
+Capture live network packets in real time.
+Display source and destination IP addresses.
+Show protocol types (TCP, UDP, ICMP, etc.) and packet lengths.
+Identify unusual or suspicious traffic patterns.
+Save captured packets to a log file for offline analysis.
+Command-line interface for quick access and control.
 
-How It Works
-The sniffer listens to all network traffic from your Mac. For every packet it detects, it extracts and displays:
-Source IP: The origin of the packet
-Destination IP: Where the packet is sent
-Protocol: Type of communication (TCP, UDP, ICMP)
-Packet length: Size in bytes
-It provides a clear view of your Mac’s network activity without exposing encrypted content like HTTPS or SSH traffic.
+Usage
+Run the sniffer with root privileges to access network interfaces:
+sudo python3 pocketsniffer.py
+The tool will start capturing packets and display them in the terminal.
+To stop capturing, press Ctrl + C.
+Optionally, review captured data in output.txt if logging is enabled.
 
-Use Cases
-Network monitoring: Track traffic flow from your Mac
-Learning tool: Understand packet structures and protocols
-Troubleshooting: Identify application or connectivity issues on macOS
+Safety and Legal Considerations
+Use only on networks you own or have explicit permission to monitor.
+Avoid capturing data from public or untrusted networks.
+Do not share sensitive captured data without consent.
+Use captured data responsibly for learning and testing purposes.
 
-Learning Outcomes
-Understanding of network protocols on macOS
-Practical experience with Python scripting for cybersecurity
-Ability to analyze network traffic metadata in real time
-Portfolio-ready demonstration of hands-on networking skills
-
-Notes and Warnings
-Only captures metadata, not the contents of encrypted traffic
-Must be run on networks you own or have permission to monitor
-Use responsibly to respect privacy and security
+Project Structure
+pocketsniffer.py – Main script for packet capture and display.
+output.txt – Optional log file storing captured packets.
 
 Future Enhancements
-Visual indicators or color-coded protocol output for easier reading
-Filters for specific protocols or IP addresses
-Option to save packet data for offline analysis
+Protocol filtering (TCP, UDP, ICMP, etc.).
+Real-time statistics and charts.
+Export captured data in CSV or JSON formats.
+Advanced anomaly detection for suspicious traffic.
