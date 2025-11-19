@@ -1,5 +1,3 @@
-PocketSniffer
-
 PocketSniffer is a lightweight network packet sniffer for monitoring and analyzing network traffic on your local machine. It captures packets in real time, allowing you to inspect source and destination addresses, protocol types, and packet sizes. The tool is designed for cybersecurity learning, lab testing, and small-scale network monitoring.
 
 Features
